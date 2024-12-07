@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即时通讯应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 添加背景音乐 -->
+    <audio id="bgMusic" autoplay loop muted>
+        <source src="videos/周杰伦 - 青花瓷.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 元素。
+    </audio>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="music-playing">
+                <div class="music-waves">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#download">下载</a></li>
+            <li><a href="#features">功能</a></li>
+            <li><a href="#about">关于</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要横幅 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>随时随地保持联系</h1>
+            <p>安全、快速、便捷的即时通讯体验</p>
+        </div>
+    </header>
+
+    <!-- 在hero部分后面添加 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>联系方式</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB0PSIxNjg3NzcwOTU0NTI0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwLWlkPSIyMzY3Ij48cGF0aCBkPSJNNjkwLjEgMzY0LjdjLTU4LjUgMC0xMDUuOS00Ny40LTEwNS45LTEwNS45czQ3LjQtMTA1LjkgMTA1LjktMTA1LjkgMTA1LjkgNDcuNCAxMDUuOSAxMDUuOS00Ny40IDEwNS45LTEwNS45IDEwNS45ek0yODggMzY0LjdjLTU4LjUgMC0xMDUuOS00Ny40LTEwNS45LTEwNS45czQ3LjQtMTA1LjkgMTA1LjktMTA1LjkgMTA1LjkgNDcuNCAxMDUuOSAxMDUuOS00Ny40IDEwNS45LTEwNS45IDEwNS45ek05NTguMiA2MzAuN2MwIDE2NS42LTE2NS42IDMwMC4yLTM1MS44IDMwMC4yLTE5NS4yIDAtMzUxLjgtMTM0LjYtMzUxLjgtMzAwLjJzMTU2LjYtMzAwLjIgMzUxLjgtMzAwLjJjNDEuMiAwIDgyLjQgMTAuMyAxMjMuNiAyMC42bDExMy4zLTYxLjgtMzEuMiAxMDMuNmM4Mi43IDYxLjggMTQ2LjEgMTQxLjMgMTQ2LjEgMjM3Ljh6TTYwMy4zIDU3MC4yYy0yNy40IDAtNTUuMSAyNy40LTU1LjEgNTUuMXMyNy40IDU1LjEgNTUuMSA1NS4xIDU1LjEtMjcuNCA1NS4xLTU1LjEtMjcuNC01NS4xLTU1LjEtNTUuMXogbTI1MS4yIDBjLTI3LjQgMC01NS4xIDI3LjQtNTUuMSA1NS4xczI3LjQgNTUuMSA1NS4xIDU1LjEgNTUuMS0yNy40IDU1LjEtNTUuMS0yNy40LTU1LjEtNTUuMS01NS4xek0yODggMTIxLjhjLTE3NS45IDAtMzE3LjMgMTIwLjYtMzE3LjMgMjcxLjEgMCA4Ny4xIDQ0LjcgMTY1LjYgMTIzLjYgMjIzLjhsLTMxLjIgOTMuM0wxNjQuNCA2NDljMzQuNSAxMC4zIDY4LjkgMjAuNiAxMDMuNiAyMC42IDEwLjMgMCAxNy4xIDAgMjcuNC0yLjctMTAuMyAzNC41LTEzLjcgNjguOS0xMy43IDEwNi4yIDAgMTk5IDEzNC42IDM2MS44IDMxNy4zIDM2MS44IDM3LjggMCA3NS41LTYuOSAxMDYuMi0xNy4xLTE5OS0yNy40LTM0OC40LTE4NS4yLTM0OC40LTM3NS41IDAtMjAuNiAwLTQ0LjcgMy40LTY1LjJDMTg1LjYgNjQ5IDY0LjEgNTI4LjQgNjQuMSAzOTIuOWMwLTE1MS44IDEyMC42LTI3MS4xIDI3MS4xLTI3MS4xaDEwLjNDMzE4LjkgMTIxLjggMjk4LjMgMTIxLjggMjg4IDEyMS44eiIgZmlsbD0iIzA3QzE2MCIvPjwvc3ZnPg==" alt="WeChat">
+                        <span>WeChat: small郭</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="https://im.qq.com/pcqq/images/logo.png" alt="QQ">
+                        <span>QQ: small郭</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="https://weibo.com/favicon.ico" alt="Weibo">
+                        <span>微博: small郭</span>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 small郭. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var music = document.getElementById('bgMusic');
+            music.muted = false; // 取消静音
+            music.loop = true;  // 确保循环播放
+            
+            // 尝试播放
+            function playMusic() {
+                music.play()
+                    .then(() => {
+                        console.log("音乐开始循环播放");
+                    })
+                    .catch((e) => {
+                        console.log("播放失败，重试中...");
+                        setTimeout(playMusic, 1000);
+                    });
+            }
+            
+            playMusic();
+            
+            // 监听音乐结束事件，确保继续播放
+            music.addEventListener('ended', function() {
+                music.currentTime = 0;  // 重置播放位置
+                music.play();  // 重新播放
+            });
+            
+            // 确保页面获得焦点时继续播放
+            window.onfocus = function() {
+                music.play();
+            };
+            
+            // 用户交互时也尝试播放
+            document.addEventListener('click', function() {
+                music.play();
+            }, { once: true });
+        });
+    </script>
+</body>
+</html> 
